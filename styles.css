@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+#menu-opciones {
+    padding-top: 10px;
+    font-size: 110%;
+}
+
+#menu-opciones img {
+    padding-top: 15px;
+    height: 6%;   
+}
+
+#menu-opciones li {
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 1px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#menu-opciones li a {
+    display: inline-block;
+    padding: 4px;
+    padding-bottom: 3px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+    color: rgb(19, 44, 119);
+}
+
+#menu-opciones li a:hover {
+    transition: 0.5s ease;
+    background-color: rgb(19, 44, 119);
+    color: white;
+    border-radius: 5px 5px 0 0 ;
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+
+/*************************************************************************************************************************/
+
+body .promociones1 {
+    display: flex;
+}
+
+.promociones1 h2{
+    padding: 3px;
+    flex: .2;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+.promociones1 .promo1{
+    padding: 20px;
+    flex: .7;
+}
+
+.promo1-img img{
+    padding: 5px;
+    padding-bottom: 15px;
+    flex: .5;
+}
+
+body .promociones2 {
+    background-color: rgb(195, 237, 245);
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/*************************************************************************************************************************/
+body .cuerpo {
+    display: flex;
+}
+
+body .cuerpo .texto-cuerpo {
+    padding: 20px;
+    text-align: justify;
+    flex: 2.5;
+    box-sizing: border-box;
+}
+
+body .cuerpo .texto-cuerpo h3{
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 3px;
+}
+
+body .cuerpo .texto-cuerpo2{
+    padding: 20px;
+    text-align: justify;
+    flex: .6;
+    box-sizing: border-box;
+}
+
+body .cuerpo .texto-cuerpo2 img{
+    height: 400px;
+}
+
+
+/*************************************************************************************************************************/
+
+.cycle-slideshow {
+    position: relative;
+    box-sizing: border-box;    
+    background-color: tomato;
+}
+
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top: 30%;
+    display: block;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+    font-size: 50px;
+}
+
+.cycle-next {
+    right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev, 
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+
+/*************************************************************************************************************************/
+
+hr {
+    height: 3px;
+    list-style: solid 3px;  
+    background-color: teal;
+}
+
+.texto-cuerpo h3 {
+    font-size: 200%;
+}
+
+/*************************************************************************************************************************/
+
+.social-bar {
+	position: fixed;
+	left: 0;
+	top: 250px;
+    z-index: 2000;
+    font-size: 160%;
+    display: inline-block;
+}
+
+.social-bar ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .8rem;
+	-webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+.icon-twitter {
+	background: #339DC5;
+}
+.icon-youtube {
+	background: #E83028;
+}
+.icon-instagram {
+	background: #3F60A5;
+}
+.icon-whatsapp {
+    background: rgb(13, 196, 22);
+}
+.icon:first-child {
+	border-radius: 0 1rem 1rem 0;
+}
+.icon:last-child {
+	border-radius: 0 .5rem .5rem 0;
+}
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 0 .5rem .5rem 0;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/*************************************************************************************************************************/
+
+footer.col1,footer.col2 {
+    flex: 1;
+}
+
+footer{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*************************************************************************************************************************/
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
